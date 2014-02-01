@@ -1,3 +1,4 @@
+<h1>Administration Console for Events / Venues </h1>
 <% @venues.each do |venue| %>
 <div class="post">
         <p class="date"><%= venue.month %><b><%= venue.day %></b></p>
@@ -6,10 +7,15 @@
           <p><%= venue.description %></p>
           <p><%= venue.location %></p>
           <p><%= venue.image %></p>
-         </div>
+          
+        </div>
         <p class="meta"><small>
-        <%= link_to 'Details', venue %>
-       </p>
+        <%= link_to 'Show', venue %>
+        <%= link_to 'Edit', edit_venue_path(venue) %>
+        <%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'New Venue', new_venue_path %>
+
+        </p>
       </div>
 
     <% end %>
