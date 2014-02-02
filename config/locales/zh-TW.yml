@@ -1,2 +1,5 @@
 zh-TW:
-  hello: "Hello world"
+  home: "家"
+  about: "关于"
+  contact: "联系"
+  login: "注册"
