@@ -2,6 +2,7 @@ Aaa::Application.routes.draw do
   resources :partner
   resources :venues
   resources :contact
+  resources :about
   devise_for :admins
   devise_for :users
  root :to => "home#index"
