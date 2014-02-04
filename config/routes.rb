@@ -5,7 +5,7 @@ Aaa::Application.routes.draw do
   resources :about
   devise_for :admins
   devise_for :users
- root :to => "home#index"
+  root :to => "home#index"
 
  get "venues/:venue_name" => "venues#index", as: :venue_name
  
