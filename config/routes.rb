@@ -1,4 +1,6 @@
 Aaa::Application.routes.draw do
+  resources :deals
+
   resources :partner
   resources :venues
   resources :contact
@@ -6,6 +8,7 @@ Aaa::Application.routes.draw do
   devise_for :admins
   devise_for :users
   root :to => "home#index"
+  resources :search
 
  get "venues/:venue_name" => "venues#index", as: :venue_name
  
