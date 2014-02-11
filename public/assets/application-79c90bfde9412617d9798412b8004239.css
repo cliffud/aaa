@@ -25,7 +25,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #E9F0F2 url(img02.jpg) repeat-x left top;
+	background: #E9F0F2 url(images/img02.jpg) repeat-x left top;
 	text-align: justify;
 	font: 12px Arial, Helvetica, sans-serif;
 	color: #000000;
@@ -106,12 +106,12 @@ hr {
 
 #menu {
 	float: right;
-	background: #DA2128 url(img03.jpg) no-repeat left top;
+	background: #DA2128 url(images/img03.jpg) no-repeat left top;
 	margin-top: 60px;
 }
 
 #menu ul {
-	background: url(img04.jpg) no-repeat right top;
+	background: url(images/img04.jpg) no-repeat right top;
 	margin: 0px;
 	margin-left: 10px;
 	margin-right: 15px;
@@ -128,7 +128,7 @@ hr {
 	float: left;
 	margin-left: 5px;
 	padding: 4px 15px;
-	background: url(img05.jpg) no-repeat right 50%;
+	background: url(images/img05.jpg) no-repeat right 50%;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif; 
@@ -171,7 +171,7 @@ hr {
 	margin-top: 6px;
 	margin-right: 20px;
 	padding-top: 9px;
-	background: url(img01.jpg) no-repeat;
+	background: url(images/img01.jpg) no-repeat;
 	line-height: normal;
 	text-transform: uppercase;
 	text-align: center;

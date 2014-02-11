@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'rails_12factor'
+gem 'asset_sync'
 gem 'carrierwave'
 gem 'devise'
 # Use SCSS for stylesheets
@@ -17,6 +17,7 @@ end
 
 group :production do
 	gem 'pg'
+	gem 'rails_12factor'
 end
 
 gem 'uglifier', '>= 1.3.0'
