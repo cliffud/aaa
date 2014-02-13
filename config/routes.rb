@@ -1,4 +1,6 @@
 Aaa::Application.routes.draw do
+  resources :events
+
   resources :deals
 
   resources :partner
@@ -6,9 +8,13 @@ Aaa::Application.routes.draw do
   resources :contact
   resources :about
   devise_for :admins
-  devise_for :users
+ devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   root :to => "home#index"
   resources :search
+
+#   devise_scope :user do
+#    get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+# end
 
  get "venues/:venue_name" => "venues#index", as: :venue_name
  

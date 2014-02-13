@@ -10,6 +10,7 @@ gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+gem 'omniauth-facebook'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'

@@ -20,11 +20,11 @@
       <% if current_user %>
       <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>  
       <% else %>
-      <li><%= link_to "Log In", new_user_session_path%></li>
+      <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
   
       <% end %>
       <% if current_user %>
-        Hello <% @users = @email.users.all if @current_user_email %>
+        <%= current_user.email %><% @users = @email.users.all if @current_user_email %>
         <% else %>
         <% end %> 
     </ul>
