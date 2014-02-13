@@ -7,7 +7,7 @@ Devise.setup do |config|
   config.secret_key = 'd5d17efe852d371e0f2c0f6ede8210eb31d2334dd690b9e66c1e6e48dca7df93c9d2deeaab2e7d6a3f25f5add18c9f57958a59332d229fb31cb01e2c832dd7a1'
 
 require "omniauth-facebook"
-config.omniauth :facebook, "554662494630428", "deb289384efde10c7e808df189d217ee",
+config.omniauth :facebook, "514127992033872", "459a5b74ef5a6b138e4006666d142649",
       {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
 
 
